@@ -40,10 +40,15 @@ exports.getUserAttendanceDates = (req, res, next) => {
   let op = null;
   if (filterAll)
     op = User
-      .findOne({ userId })
+      .findById(userId)
       .populate('attendances', 'date _id');
 
   op.then((attendanceDates) => {
+    if (!attendanceDates) {
+      return res.status(404).send({
+        message: "Attendance not found"
+      });
+    }
     res.send(attendanceDates);
   }).catch((err) => {
     return res.status(500).send({
@@ -68,7 +73,6 @@ exports.postUser = (req, res, next) => {
   const user = new User({ name, lastName, dob, email, mobile, imageUrl, membershipStart, membershipEnd, timeStamp });
 
   user.save().then((result) => {
-    console.log(result);
     res.send(result);
   }).catch((error) => {
     res.status(500).send({

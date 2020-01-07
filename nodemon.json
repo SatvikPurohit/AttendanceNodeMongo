@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USER": "attendance",
+    "MONGO_PWD": "L2LGCOffh28fwhTj",
+    "MONGO_DB": "attendanceDB"
+  }
+}
