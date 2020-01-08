@@ -86,3 +86,6 @@ mongoose.connect(MONGODB_URI).then(() => {
   server.key always to Server
   server.cert send to client
 */
+/*
+  NODE_ENV=production passed by Heroku
+*/

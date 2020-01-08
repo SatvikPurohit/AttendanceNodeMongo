@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://attendance:L2LGCOffh28fwhTj@cluster0-a3dsx.mongodb.net/attendanceDB?retryWrites=true&w=majority";
+const uri = "";
 let _db;
 
 /**
