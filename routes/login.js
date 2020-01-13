@@ -6,7 +6,7 @@ const loginController = require('../controllers/login');
 
 const router = express.Router();
 
-// /admin/add-product => GET
-router.get('/login', loginController.getAuth);
+//Admin Login
+router.post('/login', loginController.getAuth);
 
 module.exports = router;

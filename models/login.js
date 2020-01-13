@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const loginSchema = new Schema({
   uName: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   role: {
     type: String,

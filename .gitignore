@@ -2,3 +2,5 @@ node_modules
 .vscode
 server.cert
 server.key
+package-lock.json
+nodemon.json
