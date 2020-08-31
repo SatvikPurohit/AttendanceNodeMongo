@@ -11,6 +11,7 @@
     ```
 
 The site should now be running at <http://localhost:3000>
+Heroku Link: https://gym-attendance.herokuapp.com/users/
 
 # USED
 
